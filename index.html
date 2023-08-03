@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+        }
+
+        #pause {
+            width: 200px;
+            cursor:pointer;
+            position:absolute;
+            top:200px;
+            right:300px;
+            z-index:9999;
+            border:none;
+            border-radius:50px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="wrapper">
+            <video
+                src="https://vod-progressive.akamaized.net/exp=1691079800~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2420%2F21%2F537102350%2F2542703419.mp4~hmac=4d0873ad9758f9df6cf1fa2d86508e6ac4e4043c5ba320e48fa742011bb7bc8d/vimeo-prod-skyfire-std-us/01/2420/21/537102350/2542703419.mp4?filename=file.mp4"
+                type="video/mp4" id="videos"></video>
+
+            <button id="pause" onclick="myvideo()">pause</button>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
